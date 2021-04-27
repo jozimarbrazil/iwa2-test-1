@@ -1,3 +1,4 @@
+//code from Mikhail created in class
 const UPLOAD_PATH = require('./routes').UPLOAD_PATH,
 Image = require('./models/image'),
 path = require('path'),

@@ -6,7 +6,6 @@ var bookchema = new mongoose.Schema({
     title: String,
     year: String,
     publisher: String,
-    genre: [String],
    Author: String,
     price: Number 
 });

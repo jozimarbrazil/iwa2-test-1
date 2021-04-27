@@ -1,16 +1,21 @@
-/*
-code written by Mikhail in class, 
-and adapted to suit my project
-*/
+
+//code written by Mikhail in class, 
+//and adapted to suit my project
+
 // Creating a express api
 const express = require('express'),
 // Define router as express routes
 router = express.Router();
 
+
  // Storing book-controller inside of a varible
 bookCtrl = require('./book-controller');
 
-////Defining the routes to create, read, update and delete
+router.get('/', function(req, res) {
+    res.render('index');
+});
+
+//Defining the routes to create, read, update and delete
 //Each of them will have a different function (functions are stored on book-controller)
 
 router.post('/books', bookCtrl.createBook);
