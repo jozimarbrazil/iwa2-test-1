@@ -1,21 +1,13 @@
 {
   "name": "iwa2-jozimarbasilio",
   "version": "0.0.1",
-  "description": "my test app for IWA",
+  "description": "CA2",
   "main": "index.js",
   "scripts": {
     "test": "nodemon index.js",
     "start": "node index.js"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/mikhail-cct/iwa2-test.git"
-  },
-  "author": "jozimar",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/mikhail-cct/iwa2-test/issues"
-  },
+ 
   "homepage": "https://github.com/mikhail-cct/iwa2-test#readme",
   "dependencies": {
     "axios": "^0.21.1",
