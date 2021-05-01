@@ -27,9 +27,9 @@ app.set('view engine', 'ejs');
 // URLenconded allow us to extract info from the body of the request (req.body)
 app.use(express.urlencoded({ extended: true }));
 // Storing the book-controller em uma variavel
-var booksCtrl = require('./controllers/book-controller');
+var booksCtrl = require('../controllers/book-controller');
 // Given access to the routes
-app.use(require('./routes/routes'));
+app.use(require('../routes/routes'));
 
 //Defining the routes to create, read, update and delete
 //Each of them will have a different function (functions are stored on book-controller)
