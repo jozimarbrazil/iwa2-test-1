@@ -29,7 +29,8 @@ app.use(express.urlencoded({ extended: true }));
 // Storing the book-controller em uma variavel
 var booksCtrl = require('../controllers/book-controller');
 // Given access to the routes
-app.use(require('../routes/routes'));
+
+app.use(require('./routes/routes'));
 
 //Defining the routes to create, read, update and delete
 //Each of them will have a different function (functions are stored on book-controller)
