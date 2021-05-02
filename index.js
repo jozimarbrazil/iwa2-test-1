@@ -20,7 +20,7 @@ require('dotenv').config();
 // Create an app using Express framework
 var app = express();
 // Defining a port, but using process.env.PORT to don't make it hardcoded
-var port = (process.env.PORT || 8000);
+var port = (process.env.PORT || 3000);
 // Create a new shorter path to access the views folder 
 app.set('views', path.join(__dirname, 'views'));
 // Setting the view engine to EJS
