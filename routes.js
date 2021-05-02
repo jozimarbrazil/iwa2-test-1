@@ -1,6 +1,6 @@
 // Code written  based on Mikhail Timofeev lecturers at CCT Dublin 
 // Creating a express api
-var express = require('express'),
+const express = require('express'),
     // Define router as express routes
     router = express.Router(),
     // Storing book-controller inside of a varible

@@ -1,5 +1,5 @@
 /*
-code written by Mikhail in class, taken from https://github.com/mikhail-cct/CA1-In-class-Demo.git 
+code written by Mikhail in class, 
 and adapted to suit my project
 */
 html {
@@ -40,7 +40,7 @@ table, th, td {
      font-weight: bold;
 }
 
-#movieTable tr:hover {background-color: #ddd;}
+#bookTable tr:hover {background-color: #ddd;}
 
 .selected {
     background-color: black;
