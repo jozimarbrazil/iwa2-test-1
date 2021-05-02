@@ -9,14 +9,14 @@ mongoose = require('mongoose');
 
 var app = express();
 var server = http.createServer(app);
-var port = 3000;
+var port = 8000;
 dotenv.config();
 
 app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(express.static(path.resolve(__dirname, 'views')));
 app.use(express.urlencoded({extended: true}));
-app.use(require('./routes/routes'));
+app.use(require('./routes'));
 
 
 server.listen(process.env.PORT || port, process.env.IP || "0.0.0.0", function(){
