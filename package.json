@@ -1,5 +1,5 @@
 {
-  "name": "Library",
+  "name": "iwa2-test-1",
   "version": "0.0.1",
   "description": "CA2",
   "main": "server.js",
@@ -9,16 +9,16 @@
   },
    "repository": {
     "type": "git",
-    "url": "git+https://github.com/jozimarbrazil/Library"
+    "url": "git+https://github.com/jozimarbrazil/iwa2-test-1"
   },
   "author": "Jozimar",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/jozimarbrazil/Library/issues"
+    "url": "https://github.com/jozimarbrazil/iwa2-test-1/issues"
   },
   
  
-  "homepage": "https://github.com/jozimarbrazil/Library#readme",
+  "homepage": "https://github.com/jozimarbrazil/iwa2-test-1#readme",
   "dependencies": {
     "axios": "^0.21.1",
     "body-parser": "^1.19.0",
