@@ -1,11 +1,11 @@
-
 /**
  * @author Jozimar Basilio Ferreira- 2018389
  * // Code written based on Mikhail Timofeev lecturers at CCT Dublin 
  * API built using the Express framework
  */
 const http = require('http');
-const logger = require('morgan');
+var logger = require('morgan');
+
 // Cors package enables Cross-origin resource sharing 
 const cors = require("cors");
 // Express is the web framework used to create the API
@@ -20,7 +20,7 @@ require('dotenv').config();
 // Create an app using Express framework
 var app = express();
 // Defining a port, but using process.env.PORT to don't make it hardcoded
-var port = process.env.PORT || 8000;
+var port = (process.env.PORT || 8000);
 // Create a new shorter path to access the views folder 
 app.set('views', path.join(__dirname, 'views'));
 // Setting the view engine to EJS
