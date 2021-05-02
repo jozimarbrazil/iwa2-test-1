@@ -5,7 +5,4 @@ tasks:
     command: mkdir -p data && mongod --dbpath data
   - name: Install nodemon
     command: npm i -g nodemon && npm start
-  - name: getting port
-  - command: npm -m http.server 8000
-  - name: preview
-  - command: gp preview $(gp url 8000)
+ 

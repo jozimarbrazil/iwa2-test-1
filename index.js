@@ -4,7 +4,8 @@
  * // Code written based on Mikhail Timofeev lecturers at CCT Dublin 
  * API built using the Express framework
  */
-
+const http = require('http');
+const logger = require('morgan');
 // Cors package enables Cross-origin resource sharing 
 const cors = require("cors");
 // Express is the web framework used to create the API
@@ -19,7 +20,7 @@ require('dotenv').config();
 // Create an app using Express framework
 var app = express();
 // Defining a port, but using process.env.PORT to don't make it hardcoded
-var port = (process.env.PORT || 8000);
+var port = process.env.PORT || 8000;
 // Create a new shorter path to access the views folder 
 app.set('views', path.join(__dirname, 'views'));
 // Setting the view engine to EJS
@@ -30,7 +31,7 @@ app.use(express.urlencoded({ extended: true }));
 var booksCtrl = require('../controllers/book-controller');
 // Given access to the routes
 
-app.use(require('./routes/routes'));
+app.use(require('../routes/routes'));
 
 //Defining the routes to create, read, update and delete
 //Each of them will have a different function (functions are stored on book-controller)
@@ -41,7 +42,7 @@ app.get('/update', booksCtrl.updateBook);
 
 // Listening to port
 app.listen(port, function (err) {
-    console.log("Listening on Port: " + port)
+    console.log("Listening on Port: " + port);
 });
 
 //Mongoose connector, process.env.MONGDB_URL is holding the access info

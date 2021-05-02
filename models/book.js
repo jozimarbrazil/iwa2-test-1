@@ -28,8 +28,6 @@ var bookSchema = new mongoose.Schema({
         required: true
     },
 
-    // This is the Year that the book was read - Not required because it is possible that the book was never read
-    ReadYear: String
 });
 
 // Exporting the Book Model

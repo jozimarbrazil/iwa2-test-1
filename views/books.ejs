@@ -183,15 +183,7 @@
                                       data-success="Valid"></span>
 								</div>
 							</div>
-							<div class="row">
-								<div class="input-field col s12">
-									<input placeholder="2019" name="ReadYear" type="text" class="validate"
-                                       pattern="[0-9]{1,4}" value="<%= book.ReadYear %>">
-									<label for="year_edition">Read in</label>
-									<span class="helper-text" data-error="Enter the year. Eg. 2019"
-                                      data-success="Valid"></span>
-								</div>
-							</div>
+							
 							<button onclick="M.toast({html: 'Book updated!'})" class="btn waves-effect waves-light"
                                 type="submit" name="post">Save
                             <i class="material-icons right">save</i>
